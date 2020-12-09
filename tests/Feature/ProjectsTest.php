@@ -17,7 +17,6 @@ class ProjectsTest extends TestCase
 
     public function a_user_can_create_a_project()
     {
-
         $this->withoutExceptionHandling();
 
         $attributes =  [
@@ -25,13 +24,24 @@ class ProjectsTest extends TestCase
             'description' => $this->faker->paragraph,
         ];
 
-
         $this->post('/projects', $attributes)->assertRedirect('/projects');
-
 
         $this->assertDatabaseHas('projects', $attributes);
 
         $this->get('/projects')->assertSee($attributes['title']);
+    }
+
+
+    /** @test  */
+    public function a_user_can_view_a_project()
+    {
+        $this->withoutExceptionHandling();
+
+        $project = Project::factory()->create();
+
+        $this->get($project->path())
+            ->assertSee($project->title)
+            ->assertSee($project->description);
 
     }
 
@@ -43,7 +53,6 @@ class ProjectsTest extends TestCase
 
         $this->post('/projects', $attribute)->assertSessionHasErrors('title');
     }
-
 
 
     /** @test */
