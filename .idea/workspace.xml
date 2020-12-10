@@ -23,13 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea472835-7901-48af-9870-b7f3729fa28d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/projects/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/ProjectsTest_a_project_requires_a_title.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/ProjectsTest_a_project_requires_a_title.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ProjectTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ProjectTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,14 +177,32 @@
       <recent name="C:\Users\NardDog\Desktop\Laravel\birdboard\resources\views\projects" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.ProjectsTest.a_authenticated_user_cannpt_view_others_project_user">
-    <configuration name="ProjectTest.it_belongs_to_an_owner" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+  <component name="RunManager" selected="PHPUnit.ManageProjectsTest.guest_cannot_manage_project">
+    <configuration name="ManageProjectsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Unit\ProjectTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/ProjectTest.php" method="it_belongs_to_an_owner" scope="Method" />
+      <TestRunner class="Tests\Feature\ManageProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ManageProjectsTest.a_user_can_create_a_project" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\ManageProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" method="a_user_can_create_a_project" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ManageProjectsTest.guest_cannot_manage_project" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\ManageProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" method="guest_cannot_manage_project" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ProjectsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -194,7 +211,7 @@
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" scope="Class" />
+      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="ProjectsTest.a_authenticated_user_cannpt_view_others_project_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -203,25 +220,7 @@
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" method="a_authenticated_user_cannpt_view_others_project_user" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ProjectsTest.a_user_can_view_their_project" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" method="a_user_can_view_their_project" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ProjectsTest.guest_cannot_view_a_single_project" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" method="guest_cannot_view_a_single_project" scope="Method" />
+      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" method="a_authenticated_user_cannpt_view_others_project_user" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -232,18 +231,18 @@
       <item itemvalue="PHPUnit.phpunit.xml" />
       <item itemvalue="PHPUnit.ProjectsTest.a_project_requires_a_title" />
       <item itemvalue="PHPUnit.ProjectsTest" />
-      <item itemvalue="PHPUnit.ProjectsTest.guest_cannot_view_a_single_project" />
-      <item itemvalue="PHPUnit.ProjectsTest.a_user_can_view_their_project" />
       <item itemvalue="PHPUnit.ProjectsTest.a_authenticated_user_cannpt_view_others_project_user" />
-      <item itemvalue="PHPUnit.ProjectTest.it_belongs_to_an_owner" />
+      <item itemvalue="PHPUnit.ManageProjectsTest" />
+      <item itemvalue="PHPUnit.ManageProjectsTest.a_user_can_create_a_project" />
+      <item itemvalue="PHPUnit.ManageProjectsTest.guest_cannot_manage_project" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ManageProjectsTest.guest_cannot_manage_project" />
+        <item itemvalue="PHPUnit.ManageProjectsTest.a_user_can_create_a_project" />
+        <item itemvalue="PHPUnit.ManageProjectsTest" />
         <item itemvalue="PHPUnit.ProjectsTest.a_authenticated_user_cannpt_view_others_project_user" />
         <item itemvalue="PHPUnit.ProjectsTest" />
-        <item itemvalue="PHPUnit.ProjectTest.it_belongs_to_an_owner" />
-        <item itemvalue="PHPUnit.ProjectsTest.a_user_can_view_their_project" />
-        <item itemvalue="PHPUnit.ProjectsTest.guest_cannot_view_a_single_project" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +256,7 @@
       <updated>1607526576631</updated>
       <workItem from="1607526577705" duration="5462000" />
       <workItem from="1607536837958" duration="6462000" />
-      <workItem from="1607590036743" duration="2067000" />
+      <workItem from="1607590036743" duration="3321000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Request Validation">
       <created>1607537583892</created>
@@ -280,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607590535380</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Scoping Projects">
+      <created>1607592194577</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607592194577</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +309,8 @@
     <MESSAGE value="Testing Request Validation" />
     <MESSAGE value="Model Tests" />
     <MESSAGE value="A Project Requires An Owner" />
-    <option name="LAST_COMMIT_MESSAGE" value="A Project Requires An Owner" />
+    <MESSAGE value="Scoping Projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scoping Projects" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="200" key="#CLI_Interpreters" timestamp="1607590566431">
@@ -318,34 +325,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607532120054" />
+    <state x="582" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607592305065">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="582" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607592305065" />
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607539154236">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607539154236" />
-    <state width="1877" height="188" key="GridCell.Tab.0.bottom" timestamp="1607592090436">
+    <state width="1877" height="239" key="GridCell.Tab.0.bottom" timestamp="1607593353625">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.0.bottom/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607592090436" />
-    <state width="1877" height="188" key="GridCell.Tab.0.center" timestamp="1607592090435">
+    <state width="1877" height="239" key="GridCell.Tab.0.bottom/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607593353625" />
+    <state width="1877" height="239" key="GridCell.Tab.0.center" timestamp="1607593353625">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.0.center/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607592090435" />
-    <state width="1877" height="188" key="GridCell.Tab.0.left" timestamp="1607592090435">
+    <state width="1877" height="239" key="GridCell.Tab.0.center/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607593353625" />
+    <state width="1877" height="239" key="GridCell.Tab.0.left" timestamp="1607593353624">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.0.left/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607592090435" />
-    <state width="1877" height="188" key="GridCell.Tab.0.right" timestamp="1607592090435">
+    <state width="1877" height="239" key="GridCell.Tab.0.left/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607593353624" />
+    <state width="1877" height="239" key="GridCell.Tab.0.right" timestamp="1607593353625">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.0.right/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607592090435" />
+    <state width="1877" height="239" key="GridCell.Tab.0.right/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607593353625" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1607537278044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607537278044" />
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1607590540201">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1607592197086">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607590540201" />
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607592197086" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1607543710043">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
