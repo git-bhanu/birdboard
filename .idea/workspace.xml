@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,15 +23,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea472835-7901-48af-9870-b7f3729fa28d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/projects/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/ProjectTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthenticatedSessionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmablePasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationPromptController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/NewPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordResetLinkController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerifyEmailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Auth/LoginRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/AppLayout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/GuestLayout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/confirm-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/reset-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/application-logo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/auth-card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/auth-session-status.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/auth-validation-errors.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/dropdown-link.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/dropdown.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/label.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/nav-link.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/responsive-nav-link.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordConfirmationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordResetTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/birdboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/birdboard.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProjectFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_09_161231_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_09_161231_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +201,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/laravel/breeze" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lQPw1zX0E5OMU6ii11Zx1oLxL0" />
@@ -177,19 +229,6 @@
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.ProjectsTest">
-    <configuration name="ProjectTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\ProjectTest" file="$PROJECT_DIR$/tests/Unit/ProjectTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ProjectTest.it_has_a_path" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Unit\ProjectTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/ProjectTest.php" method="it_has_a_path" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="ProjectsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -197,6 +236,24 @@
         </PhpTestInterpreterSettings>
       </CommandLine>
       <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectsTest.a_project_requires_a_description" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" method="a_project_requires_a_description" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectsTest.a_project_requires_a_owner" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" method="a_project_requires_a_owner" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ProjectsTest.a_user_can_create_a_project" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -208,13 +265,13 @@
       <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" method="a_user_can_create_a_project" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ProjectsTest.a_user_can_view_a_project" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+    <configuration name="UserTest.has_projects" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" method="a_user_can_view_a_project" scope="Method" />
+      <TestRunner class="Tests\Unit\UserTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="has_projects" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -225,18 +282,18 @@
       <item itemvalue="PHPUnit.phpunit.xml" />
       <item itemvalue="PHPUnit.ProjectsTest.a_project_requires_a_title" />
       <item itemvalue="PHPUnit.ProjectsTest.a_user_can_create_a_project" />
-      <item itemvalue="PHPUnit.ProjectsTest.a_user_can_view_a_project" />
-      <item itemvalue="PHPUnit.ProjectTest.it_has_a_path" />
-      <item itemvalue="PHPUnit.ProjectTest" />
       <item itemvalue="PHPUnit.ProjectsTest" />
+      <item itemvalue="PHPUnit.ProjectsTest.a_project_requires_a_owner" />
+      <item itemvalue="PHPUnit.ProjectsTest.a_project_requires_a_description" />
+      <item itemvalue="PHPUnit.UserTest.has_projects" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.ProjectsTest" />
+        <item itemvalue="PHPUnit.UserTest.has_projects" />
         <item itemvalue="PHPUnit.ProjectsTest.a_user_can_create_a_project" />
-        <item itemvalue="PHPUnit.ProjectsTest.a_user_can_view_a_project" />
-        <item itemvalue="PHPUnit.ProjectTest.it_has_a_path" />
-        <item itemvalue="PHPUnit.ProjectTest" />
+        <item itemvalue="PHPUnit.ProjectsTest.a_project_requires_a_description" />
+        <item itemvalue="PHPUnit.ProjectsTest.a_project_requires_a_owner" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +306,8 @@
       <option name="presentableId" value="Default" />
       <updated>1607526576631</updated>
       <workItem from="1607526577705" duration="5462000" />
-      <workItem from="1607536837958" duration="3923000" />
+      <workItem from="1607536837958" duration="6462000" />
+      <workItem from="1607590036743" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Request Validation">
       <created>1607537583892</created>
@@ -258,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607537583893</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Model Tests">
+      <created>1607541694459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607541694459</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,11 +339,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Testing Request Validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Request Validation" />
+    <MESSAGE value="Model Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model Tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="674" y="168" key="#PHP" timestamp="1607531969043">
@@ -293,38 +360,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607539154236" />
-    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1607540045302">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1607590296558">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.bottom/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607540045302" />
-    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1607540045302">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607590296558" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1607590296558">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.center/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607540045302" />
-    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1607540045302">
+    <state width="1877" height="316" key="GridCell.Tab.0.center/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607590296558" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1607590296558">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.left/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607540045302" />
-    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1607540045302">
+    <state width="1877" height="316" key="GridCell.Tab.0.left/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607590296558" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1607590296558">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.right/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607540045302" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607590296558" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1607537278044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607537278044" />
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1607537602498">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1607541696358">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607537602498" />
-    <state x="616" y="243" key="run.anything.popup" timestamp="1607531282358">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607541696358" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1607543710043">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" key="run.anything.popup/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607531282358" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1607541522250">
+    <state x="616" y="243" key="run.anything.popup/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607543710043" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1607590141852">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607541522250" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607590141852" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/birdboard@ProjectsTest_a_user_can_create_a_project.xml" NAME="ProjectsTest.a_user_can_create_a_project Coverage Results" MODIFIED="1607530693854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
