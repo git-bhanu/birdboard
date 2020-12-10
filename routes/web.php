@@ -18,15 +18,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/projects', 'App\Http\Controllers\ProjectsController@index');
+Route::group(['middleware' => 'auth'], function () {
 
-Route::get('/projects/{project}', 'App\Http\Controllers\ProjectsController@show');
+    Route::get('/projects', 'App\Http\Controllers\ProjectsController@index');
 
-Route::post('/projects', 'App\Http\Controllers\ProjectsController@store')->middleware('auth');
+    Route::get('/projects/{project}', 'App\Http\Controllers\ProjectsController@show');
 
+    Route::post('/projects', 'App\Http\Controllers\ProjectsController@store');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->middleware(['auth'])->name('dashboard');
+
+});
+
 
 require __DIR__.'/auth.php';
