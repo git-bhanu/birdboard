@@ -23,12 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea472835-7901-48af-9870-b7f3729fa28d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/projects/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/ProjectsTest_a_project_requires_a_title.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/ProjectsTest_a_project_requires_a_title.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +169,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/projects" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -177,7 +177,7 @@
       <recent name="C:\Users\NardDog\Desktop\Laravel\birdboard\resources\views\projects" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.ManageProjectsTest.guest_cannot_manage_project">
+  <component name="RunManager" selected="PHPUnit.ManageProjectsTest">
     <configuration name="ManageProjectsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -205,13 +205,13 @@
       <TestRunner class="Tests\Feature\ManageProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" method="guest_cannot_manage_project" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ProjectsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+    <configuration name="ProjectTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\ProjectsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" scope="Class" />
+      <TestRunner class="Tests\Unit\ProjectTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/ProjectTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="ProjectsTest.a_authenticated_user_cannpt_view_others_project_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -230,19 +230,19 @@
     <list>
       <item itemvalue="PHPUnit.phpunit.xml" />
       <item itemvalue="PHPUnit.ProjectsTest.a_project_requires_a_title" />
-      <item itemvalue="PHPUnit.ProjectsTest" />
       <item itemvalue="PHPUnit.ProjectsTest.a_authenticated_user_cannpt_view_others_project_user" />
       <item itemvalue="PHPUnit.ManageProjectsTest" />
       <item itemvalue="PHPUnit.ManageProjectsTest.a_user_can_create_a_project" />
       <item itemvalue="PHPUnit.ManageProjectsTest.guest_cannot_manage_project" />
+      <item itemvalue="PHPUnit.ProjectTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ManageProjectsTest" />
+        <item itemvalue="PHPUnit.ProjectTest" />
         <item itemvalue="PHPUnit.ManageProjectsTest.guest_cannot_manage_project" />
         <item itemvalue="PHPUnit.ManageProjectsTest.a_user_can_create_a_project" />
-        <item itemvalue="PHPUnit.ManageProjectsTest" />
         <item itemvalue="PHPUnit.ProjectsTest.a_authenticated_user_cannpt_view_others_project_user" />
-        <item itemvalue="PHPUnit.ProjectsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +256,8 @@
       <updated>1607526576631</updated>
       <workItem from="1607526577705" duration="5462000" />
       <workItem from="1607536837958" duration="6462000" />
-      <workItem from="1607590036743" duration="3321000" />
+      <workItem from="1607590036743" duration="4536000" />
+      <workItem from="1607596047195" duration="4937000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Request Validation">
       <created>1607537583892</created>
@@ -286,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607592194577</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="The Create Project View">
+      <created>1607593398113</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607593398113</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +318,8 @@
     <MESSAGE value="Model Tests" />
     <MESSAGE value="A Project Requires An Owner" />
     <MESSAGE value="Scoping Projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scoping Projects" />
+    <MESSAGE value="The Create Project View" />
+    <option name="LAST_COMMIT_MESSAGE" value="The Create Project View" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="200" key="#CLI_Interpreters" timestamp="1607590566431">
@@ -333,38 +342,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607539154236" />
-    <state width="1877" height="239" key="GridCell.Tab.0.bottom" timestamp="1607593353625">
+    <state width="1877" height="239" key="GridCell.Tab.0.bottom" timestamp="1607597711341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.bottom/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607593353625" />
-    <state width="1877" height="239" key="GridCell.Tab.0.center" timestamp="1607593353625">
+    <state width="1877" height="239" key="GridCell.Tab.0.bottom/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607597711341" />
+    <state width="1877" height="239" key="GridCell.Tab.0.center" timestamp="1607597711340">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.center/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607593353625" />
-    <state width="1877" height="239" key="GridCell.Tab.0.left" timestamp="1607593353624">
+    <state width="1877" height="239" key="GridCell.Tab.0.center/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607597711340" />
+    <state width="1877" height="239" key="GridCell.Tab.0.left" timestamp="1607597711340">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.left/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607593353624" />
-    <state width="1877" height="239" key="GridCell.Tab.0.right" timestamp="1607593353625">
+    <state width="1877" height="239" key="GridCell.Tab.0.left/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607597711340" />
+    <state width="1877" height="239" key="GridCell.Tab.0.right" timestamp="1607597711341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.right/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607593353625" />
-    <state x="461" y="170" key="SettingsEditor" timestamp="1607537278044">
+    <state width="1877" height="239" key="GridCell.Tab.0.right/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607597711341" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1607596436245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="170" key="SettingsEditor/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607537278044" />
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1607592197086">
+    <state x="461" y="170" key="SettingsEditor/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607596436245" />
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1607593400225">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607592197086" />
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607593400225" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1607543710043">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607543710043" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1607591406746">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1607596405691">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607591406746" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1607596405691" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/birdboard@ProjectsTest_a_user_can_create_a_project.xml" NAME="ProjectsTest.a_user_can_create_a_project Coverage Results" MODIFIED="1607530693854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
